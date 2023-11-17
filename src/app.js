@@ -3,7 +3,7 @@
  * app.get('page name', (request,response)=>{ respose.send({html tags} OR JSON objects)})
  * app.listen(port nb, (fn)=>{})
  */
-//app.js
+
 //app.js/about
 //app.js/help
 //app.js/weather
