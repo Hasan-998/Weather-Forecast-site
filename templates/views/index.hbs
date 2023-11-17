@@ -1,0 +1,23 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/app.js"></script>
+    <title>Home Page</title>
+    <!-- You can add additional meta tags, stylesheets, or scripts here -->
+  </head>
+  <body>
+    <div class="main">
+      {{>header}}
+    <p>{{name}}</p>
+    </div>
+    <form>
+      <input class="search" type="search" placeholder="Enter the city name">
+      <button class="btn-search">Search</button>
+    </form>
+
+    <p class="message-1"></p>
+    <p class="message-2"></p>
+    
+    {{>footer}}
+  </body>
+</html>
