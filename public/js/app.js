@@ -7,9 +7,10 @@ const messageOne = document.querySelector(".message-1");
 const messageTwo = document.querySelector(".message-2");
 
 const frontForecast = async function (city) {
-  const response = await fetch(
-    `http://localhost:3000/weather?address=${encodeURIComponent(city)}`
-  );
+  // const response = await fetch(
+  //   `http://localhost:3000/weather?address=${encodeURIComponent(city)}`
+  // ); locally
+  const response = await fetch(`/weather?address=${encodeURIComponent(city)}`);
   const data = await response.json();
   console.log(data);
   const { forecast, "countery-name": location, Error } = data;

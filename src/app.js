@@ -17,7 +17,7 @@ const GeoLocationInfo = require("./utils/geoLocation");
 const { error } = require("console");
 
 const app = express();
-
+const port = process.env.PORT || 3000;
 //Section: App Coding
 
 ///Define path for express configuration
@@ -108,6 +108,6 @@ app.get("*", (request, response) => {
 });
 
 ///to run the server at port 3000 localhost
-app.listen(3000, () => {
-  console.log("Server is running at port 3000");
+app.listen(port, () => {
+  console.log(`Server is running at port ${port}`);
 });
