@@ -19,7 +19,7 @@ const foreCast = async function (latitude, longitude) {
       else {
         const currentData = data.current;
         const overCast = currentData.weather_descriptions[0];
-        const str = `${overCast}. It is currently ${currentData.temperature} degree out. There is ${currentData.precip}% to rain.`;
+        const str = `${overCast}. It is currently ${currentData.temperature} degree out. There is ${currentData.precip}% to rain, and the humidity is ${currentData.humidity}`;
         // console.log(str); // testing
         return str;
       }
